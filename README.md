@@ -28,7 +28,8 @@ which upstream commit it was vendored from.
 ## Install
 
 ```bash
-pi install git:github.com/damian87x/jev-pi-orchestrator      # user-wide
+pi install npm:jev-pi-orchestrator                         # user-wide (npm)
+pi install git:github.com/damian87x/jev-pi-orchestrator      # or straight from GitHub
 pi install -l git:github.com/damian87x/jev-pi-orchestrator   # this project only
 ```
 

@@ -5,13 +5,46 @@
   "type": "module",
   "license": "MIT",
   "author": "Damian Borek",
-  "repository": {"type": "git", "url": "git+https://github.com/damian87x/jev-pi-orchestrator.git"},
-  "keywords": ["pi-package", "jev", "typesafe", "orchestrator", "subagents"],
-  "pi": {
-    "extensions": ["./extensions/orchestrator.ts"],
-    "skills": ["./skills"]
+  "homepage": "https://github.com/damian87x/jev-pi-orchestrator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damian87x/jev-pi-orchestrator.git"
   },
-  "pi-subagents": {"agents": ["./agents"]},
+  "bugs": {
+    "url": "https://github.com/damian87x/jev-pi-orchestrator/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "jev",
+    "typesafe",
+    "orchestrator",
+    "subagents"
+  ],
+  "files": [
+    "extensions/",
+    "agents/",
+    "skills/",
+    "core/lib/",
+    "core/scripts/",
+    "core/skills/",
+    "core/UPSTREAM",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/orchestrator.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "pi-subagents": {
+    "agents": [
+      "./agents"
+    ]
+  },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
     "typebox": "*"
