@@ -1,0 +1,22 @@
+{
+  "name": "jev-pi-orchestrator",
+  "version": "0.1.0",
+  "description": "Jev-supervised madmax conductor for pi: tiny slices, parallel pi-subagents workers in worktrees, TypeSafe Jev makes routing, review, QA and supervision decisions.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Damian Borek",
+  "repository": {"type": "git", "url": "git+https://github.com/damian87x/jev-pi-orchestrator.git"},
+  "keywords": ["pi-package", "jev", "typesafe", "orchestrator", "subagents"],
+  "pi": {
+    "extensions": ["./extensions/orchestrator.ts"],
+    "skills": ["./skills"]
+  },
+  "pi-subagents": {"agents": ["./agents"]},
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs && cd core && python3 -m unittest discover -s tests"
+  }
+}
